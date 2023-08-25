@@ -1,0 +1,46 @@
+:root {
+  --orange: rgb(224, 142, 40);
+  --orange-border: rgb(215, 145, 42);
+  --orange1: rgb(222, 139, 58);
+  --orange1-border: rgb(197, 105, 25);
+  --orange2: rgb(222, 114, 42);
+  --orange-btn-bg: linear-gradient(to top,rgb(215, 145, 42) ,rgb(249, 162, 56) 90%, rgb(234, 188, 111) 96%);
+  --menu-bg: #000000cc;
+  --main-bg: #fcfcf1;
+  --aside-bg: rgb(240, 240, 240);
+  --half-white: #ffffff90;
+  --dark-gray: #333333;
+  --gray: rgb(157, 157, 157);
+  --light-gray: rgb(220, 220, 220);
+  --footer-bg: linear-gradient(to top, rgb(232, 232, 232), white);
+  --delete-bg: linear-gradient(to top, rgb(212, 212, 212), white);
+  --red-border: rgb(180, 43, 43);
+  --red: rgb(216, 84, 84);
+  --red-bg: linear-gradient(to top, rgb(180, 43, 43), rgb(216, 84, 84));
+  --green: rgb(112, 182, 97);
+  --green-border: rgb(86, 148, 72);
+  --green-bg: linear-gradient(to top, rgb(86, 148, 72), rgb(112, 182, 97));
+  --aside-width: 320px;
+  --main-width: calc(100% - var(--aside-width));
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+.App {
+  display: flex;
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
