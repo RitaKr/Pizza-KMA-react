@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Pizza-KMA-react/static/css/main.64e80331.css",
+    "main.js": "/Pizza-KMA-react/static/js/main.84a5e613.js",
+    "static/js/787.6c635c41.chunk.js": "/Pizza-KMA-react/static/js/787.6c635c41.chunk.js",
+    "static/media/pizza_10.png": "/Pizza-KMA-react/static/media/pizza_10.cede193925ada2b98023.png",
+    "static/media/pizza_1.png": "/Pizza-KMA-react/static/media/pizza_1.5278ae79b3d85e3dba45.png",
+    "static/media/pizza_7.png": "/Pizza-KMA-react/static/media/pizza_7.dcc75d07e286048fc829.png",
+    "static/media/pizza_6.png": "/Pizza-KMA-react/static/media/pizza_6.456ac518d2be7e820380.png",
+    "static/media/pizza_2.png": "/Pizza-KMA-react/static/media/pizza_2.d314e0aabe477e1a0130.png",
+    "static/media/pizza_9.png": "/Pizza-KMA-react/static/media/pizza_9.2f58e2b7255209f0f047.png",
+    "static/media/pizza_3.png": "/Pizza-KMA-react/static/media/pizza_3.1366b9f2030925eb5fbd.png",
+    "static/media/pizza_5.png": "/Pizza-KMA-react/static/media/pizza_5.56e75b87a36cc886efa7.png",
+    "static/media/pizza_4.png": "/Pizza-KMA-react/static/media/pizza_4.6e858b4c3e708b479ea9.png",
+    "static/media/pizza_8.png": "/Pizza-KMA-react/static/media/pizza_8.89dc60f8d9feba6517bb.png",
+    "static/media/pizza_1.jpg": "/Pizza-KMA-react/static/media/pizza_1.6219274933b471e1c4a8.jpg",
+    "static/media/pizza_7.jpg": "/Pizza-KMA-react/static/media/pizza_7.86f31ea2ef273af3c6ed.jpg",
+    "static/media/pizza_6.jpg": "/Pizza-KMA-react/static/media/pizza_6.a49e28df159459bfb062.jpg",
+    "static/media/pizza_9.jpg": "/Pizza-KMA-react/static/media/pizza_9.eb07d4ebcf53f027e5f9.jpg",
+    "static/media/pizza_5.jpg": "/Pizza-KMA-react/static/media/pizza_5.8988db0240d1641fabc9.jpg",
+    "static/media/pizza_4.jpg": "/Pizza-KMA-react/static/media/pizza_4.b4850f4a3dcc3d0200a1.jpg",
+    "static/media/pizza_2.jpg": "/Pizza-KMA-react/static/media/pizza_2.7a598896a74b0f699ff8.jpg",
+    "static/media/pizza_3.jpg": "/Pizza-KMA-react/static/media/pizza_3.796b9c840aed9f266ab2.jpg",
+    "static/media/pizza_8.jpg": "/Pizza-KMA-react/static/media/pizza_8.14c15de95455ae1bea74.jpg",
+    "static/media/index.cjs": "/Pizza-KMA-react/static/media/index.87283f34b94ab8669cb4.cjs",
+    "static/media/logo.svg": "/Pizza-KMA-react/static/media/logo.6ce24c58023cc2f8fd88.svg",
+    "static/media/weight.svg": "/Pizza-KMA-react/static/media/weight.482c9d8dd5058355049fc19a342f0791.svg",
+    "static/media/size-icon.svg": "/Pizza-KMA-react/static/media/size-icon.c63655c8959e755bb342ea988e0b8fa5.svg",
+    "static/media/discount.svg": "/Pizza-KMA-react/static/media/discount.48a814db69b8dbddd283acfb1eef1f4e.svg",
+    "index.html": "/Pizza-KMA-react/index.html",
+    "main.64e80331.css.map": "/Pizza-KMA-react/static/css/main.64e80331.css.map",
+    "main.84a5e613.js.map": "/Pizza-KMA-react/static/js/main.84a5e613.js.map",
+    "787.6c635c41.chunk.js.map": "/Pizza-KMA-react/static/js/787.6c635c41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64e80331.css",
+    "static/js/main.84a5e613.js"
+  ]
+}
