@@ -66,7 +66,7 @@ function BucketItem({ pizzaData }) {
 
 
 function AsideBucket() {
-	const { bucketList, setBucketList, addPizzaToCart, totalPrice, updateTotalPrice } =
+	const { bucketList, setBucketList , totalPrice, updateTotalPrice } =
 		usePizzaContext();
 	let startX = 0;
 	let endX = 0;

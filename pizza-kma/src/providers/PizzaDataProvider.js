@@ -8,14 +8,6 @@ const PizzaDataProvider = ({ children }) => {
 	const [filter, setFilter] = React.useState({ text: "Усі піци ", id: "all" });
 	const [totalPrice, setTotalPrice] = React.useState(0);
 
-    function scrollBucket(e) {
-        const bucket = document.getElementById("bucket");
-        bucket.style.maxHeight = `calc(100vh - ${
-            document.querySelector("aside header").offsetHeight +
-            document.querySelector("aside footer").offsetHeight
-        }px)`;
-        bucket.scrollTop = bucket.scrollHeight;
-    }
 
 	function addPizzaToCart(pizza) {
         setBucketList(prevBucketList => {
