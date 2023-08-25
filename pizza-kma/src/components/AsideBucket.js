@@ -64,10 +64,20 @@ function BucketItem({ pizzaData }) {
 	);
 }
 
-
 function AsideBucket() {
-	const { bucketList, setBucketList , totalPrice, updateTotalPrice } =
+	const { bucketList, setBucketList, totalPrice, updateTotalPrice } =
 		usePizzaContext();
+
+	function updateLocalStorage() {
+		localStorage.pizzaKMA = JSON.stringify(bucketList);
+	}
+	
+	React.useEffect(() => {
+		updateLocalStorage();
+	}, [bucketList]);
+
+	
+
 	let startX = 0;
 	let endX = 0;
 	const minSwipeDistance = 30;
@@ -91,14 +101,14 @@ function AsideBucket() {
 		}
 	}
 
-    function scrollBucket(e) {
-        const bucket = document.getElementById("bucket");
-        bucket.style.maxHeight = `calc(100vh - ${
-            document.querySelector("aside header").offsetHeight +
-            document.querySelector("aside footer").offsetHeight
-        }px)`;
-        //bucket.scrollTop = bucket.scrollHeight;
-    }
+	function scrollBucket(e) {
+		const bucket = document.getElementById("bucket");
+		bucket.style.maxHeight = `calc(100vh - ${
+			document.querySelector("aside header").offsetHeight +
+			document.querySelector("aside footer").offsetHeight
+		}px)`;
+		//bucket.scrollTop = bucket.scrollHeight;
+	}
 
 	function renderBucketItems() {
 		//console.log('rendering intros: ', intros)
@@ -107,38 +117,38 @@ function AsideBucket() {
 		));
 	}
 
-    function stringifyOrder() {
-        return bucketList
-            .map((pizza) => {
-                return `\n${pizza.title} - ${pizza.amount} шт.`;
-            })
-            .join(", ");
-    }
-    function makeOrder(){
-        if (!bucketList.length) {
-            alert("Ви не вибрали жодної піци!");
-        } else {
-            let answer = window.confirm(
-                "Ваше замовлення: " +
-                    stringifyOrder() +
-                    "\n\nДо сплати " +
-                    totalPrice +
-                    " грн. \nПідтверджуєте замовлення?"
-            );
-            if (answer) {
-                alert("Дякуємо за замовлення!");
-                setBucketList([])
-            }
-        }
-    }
+	function stringifyOrder() {
+		return bucketList
+			.map((pizza) => {
+				return `\n${pizza.title} - ${pizza.amount} шт.`;
+			})
+			.join(", ");
+	}
+	function makeOrder() {
+		if (!bucketList.length) {
+			alert("Ви не вибрали жодної піци!");
+		} else {
+			let answer = window.confirm(
+				"Ваше замовлення: " +
+					stringifyOrder() +
+					"\n\nДо сплати " +
+					totalPrice +
+					" грн. \nПідтверджуєте замовлення?"
+			);
+			if (answer) {
+				alert("Дякуємо за замовлення!");
+				setBucketList([]);
+			}
+		}
+	}
 
 	React.useEffect(() => {
 		updateTotalPrice(bucketList);
 	}, [updateTotalPrice, bucketList]);
 
-    React.useEffect(()=>{
-        scrollBucket()
-    }, [bucketList.length])
+	React.useEffect(() => {
+		scrollBucket();
+	}, [bucketList.length]);
 	return (
 		<aside
 			id="bucketAside"
@@ -156,7 +166,7 @@ function AsideBucket() {
 					Очистити замовлення
 				</button>
 			</header>
-			<section className="bucket" id="bucket" >
+			<section className="bucket" id="bucket">
 				{renderBucketItems()}
 			</section>
 			<footer>

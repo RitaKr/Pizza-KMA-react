@@ -1,5 +1,6 @@
 
 import './App.css';
+import React from 'react';
 import AsideBucket from './components/AsideBucket';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -9,10 +10,7 @@ import PizzaDataProvider from './providers/PizzaDataProvider';
 
 
 function App() {
-  
-
     function handleAsideHide(e) {
-        
             if (e.target.closest("#openBucketBtn") || e.target.closest("#bucketAside") || e.target.closest(".logo.badge")) {
                 // Clicked element is the #openBucketBtn or its descendant, do nothing
                 return;

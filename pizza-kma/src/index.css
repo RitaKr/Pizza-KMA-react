@@ -44,3 +44,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+img {
+  pointer-events: none;
+}
+img::selection {
+  background-color: transparent; /* Set the background color to transparent */
+}

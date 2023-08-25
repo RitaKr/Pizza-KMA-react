@@ -3,8 +3,13 @@ import pizza_info from "../assets/js/Pizza_List";
 const PizzaContext = React.createContext();
 
 const PizzaDataProvider = ({ children }) => {
+    const fetchFromLocalStorage =()=> {
+		const storedData = localStorage.getItem("pizzaKMA");
+		if (storedData) return JSON.parse(storedData);
+		else return [];
+	}
 	const [pizzaList, setPizzaList] = React.useState(pizza_info);
-	const [bucketList, setBucketList] = React.useState([]);
+	const [bucketList, setBucketList] = React.useState(fetchFromLocalStorage);
 	const [filter, setFilter] = React.useState({ text: "Усі піци ", id: "all" });
 	const [totalPrice, setTotalPrice] = React.useState(0);
 
