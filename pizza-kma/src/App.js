@@ -13,7 +13,7 @@ function App() {
 
     function handleAsideHide(e) {
         
-            if (e.target.closest("#openBucketBtn") || e.target.closest("#bucketAside") ) {
+            if (e.target.closest("#openBucketBtn") || e.target.closest("#bucketAside") || e.target.closest(".logo.badge")) {
                 // Clicked element is the #openBucketBtn or its descendant, do nothing
                 return;
             }
