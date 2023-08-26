@@ -64,7 +64,7 @@ function BucketItem({ pizzaData }) {
 	);
 }
 
-function AsideBucket() {
+function AsideBucket({handleClickOpen}) {
 	const { bucketList, setBucketList, totalPrice, updateTotalPrice } =
 		usePizzaContext();
 
@@ -128,17 +128,8 @@ function AsideBucket() {
 		if (!bucketList.length) {
 			alert("Ви не вибрали жодної піци!");
 		} else {
-			let answer = window.confirm(
-				"Ваше замовлення: " +
-					stringifyOrder() +
-					"\n\nДо сплати " +
-					totalPrice +
-					" грн. \nПідтверджуєте замовлення?"
-			);
-			if (answer) {
-				alert("Дякуємо за замовлення!");
-				setBucketList([]);
-			}
+			console.log('open order')
+			handleClickOpen();
 		}
 	}
 

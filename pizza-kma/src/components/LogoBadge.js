@@ -5,7 +5,7 @@ function LogoBadge(){
     const [visible, setVisible] = React.useState(true);
 
     return (
-    <section className={`logo badge ${visible ? '':'hidden-badge'}`} onClick={(e)=>{console.log('badge click'); setVisible(!visible)}}>
+    <section className={`logo orange-badge ${visible ? '':'hidden-badge'}`} onClick={(e)=>{console.log('orange-badge click'); setVisible(!visible)}}>
     <img src={logoCorner} className="logo-corner " alt="corners"/>
     <p>ЦЬОГО ТИЖНЯ НА ВСЕ</p>
     <hr/>

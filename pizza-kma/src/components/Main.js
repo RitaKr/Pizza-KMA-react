@@ -73,10 +73,10 @@ function PizzaCard({pizzaData}) {
 			<figcaption>
 				<div>
 					<h2>{pizzaData.title}</h2>
-					<p>
+					<div>
 						<p className="type">{pizzaData.type}</p>
 						<p className="description">{pizzaData.description}</p>
-					</p>
+					</div>
 				</div>
 				<div className="size-selection">
 					{pizzaData.small_size && (

@@ -102,6 +102,10 @@ main header {
   border-radius: 4px;
   padding: 6px 10px;
 }
+.orange-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .quit-btn {
   float: right;
   top: 0;
@@ -431,37 +435,104 @@ aside footer .orange-btn {
   width: calc(100% - 50px);
 }
 
-.logo.badge {
+.logo.orange-badge {
   position: fixed;
   bottom: 0;
   padding: 0 10px;
   transform: translateY(0);
   transition: all 0.4s ease;
 }
-.badge .logo-corner {
+.orange-badge .logo-corner {
   top: -9px;
 
   width: calc(100% + 21.6px);
 }
-.logo.badge p {
+.logo.orange-badge p {
   font-size: 0.95rem;
   font-weight: bold;
   margin: 5px 0;
 }
-.badge hr {
+.orange-badge hr {
   width: 100%;
   border: dotted 1px var(--orange1-border);
   margin: 0;
 }
-.logo.badge p.percent {
+.logo.orange-badge p.percent {
   margin: 10px 0;
 }
 .open-bucket-btn {
   display: none;
 }
-.logo.badge.hidden-badge {
+.logo.orange-badge.hidden-badge {
   transform: translateY(90%);
 }
+
+.order h2{
+  text-align: center;
+}
+.order-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+  max-width: 65vw;
+  overflow-y: auto;
+}
+.order-item {
+  width: 110px;
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-item img {
+  width: 90%
+}
+.order-item h3 {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+.orange {
+  color: var(--orange1);
+  font-weight: bold;
+}
+.dialog-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery-form {
+  padding: 0vw;
+  
+  width: 480px;
+  max-width: 65vw;
+}
+.delivery-form > *:not(.alert) {
+  padding: 10px 0;
+
+}
+.delivery-form h1 {
+  text-align: center;
+}
+
+.delivery-form-input {
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  padding: 4px 6px;
+  border-bottom: 2px var(--orange) solid;
+}
+.delivery-form-input:focus {
+  outline: 1px solid #61dafb;
+  background: none;
+}
+label {
+  padding: 2px 4px;
+}
+
 @media screen and (max-width: 1230px){
   section.main {
       width: calc(100% - 50px);
@@ -627,10 +698,10 @@ aside footer .orange-btn {
       font-size: 1rem;
       width: 60px;
   }
-  .logo.badge p {
+  .logo.orange-badge p {
       font-size: 0.8rem;
   }
-  .badge .logo-corner {
+  .orange-badge .logo-corner {
       top: -6px;
       width: calc(100% + 21.6px);
   }
